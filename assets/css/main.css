@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --primary-color: rgb(210, 178, 0);
+    --secondary: rgb(219, 219, 255);
+}
+
+html {
+  margin: 0%;
+  padding: 0%;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: black;
+  color: var(--primary-color);
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh
+}
+
+img {
+  margin: 0 auto
+}
+.nuxt-link-exact-active {
+    color: var(--secondary)
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
+
+.bounce-enter-active
+ {
+    transform-origin: top;
+    animation: bounce-in .8s; 
+}
+.bounce-leave-active {
+    transform-origin: top;
+    animation: bounce-out .8s; 
+}
+
+@keyframes bounce-in {
+    0%{transform: scale(0);}
+    50%{transform: scale(1.25);}
+    100%{transform: scale(1);}
+}
+@keyframes bounce-out {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.25);}
+    100%{transform: scale(0);}
+}
+.link {
+  margin: 0 auto;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  transition: all 250ms ease-in-out;
+}
+.link:hover {
+  color: white;
+  text-decoration: underline;
+}
+.title {
+  font-size: 8rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+    height: 140px;
+    width: auto;
+    object-fit: cover;
+    transition: all 500ms ease-out;
+
+}
+
+img:hover {
+    transform:scale(2.5);
+}
